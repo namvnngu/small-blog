@@ -2,17 +2,65 @@
 layout: default
 ---
 
+<div class="home-page">
+    <img src="assets/img/face.png" alt="My Cartoon Face :)" class="my-face">
+    <div class="animated jackInTheBox">
+        Namie Talkie
+    </div>
+    <button class="get-started"><a href="/posts/">Get started</a></button>
+</div>
+{% include footer.html %}
 
-<section class="post">
-        <div class="flex-container">
-                {% for post in site.posts %}
-                        <div class="PostList">
-                                <div class="text">
-                                        <h3 class="postSingle"><a href="{{post.url| prepend: site.baseurl}}">{{post.title}}</a></h3>
-                                        <p class="date"><i>{{ post.date | date: '%B %-d, %Y' }}</i></p>
-                                </div>      
-                        </div>  
-                {% endfor %}
-        </div>
-        <script src="/assets/js/main.js"></script>
-</section>
+<style>
+    .my-face {
+        width: 130px;
+        height: 130px;
+        transform: scale(2.5)
+    }
+    .home-page {
+        padding-top: 50px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: -100;
+    }
+
+    .home-page div {
+        font-size: 5rem;
+        text-align: center;
+        font-weight: bold;
+        color:black;
+        font-size: 72px;
+        background: linear-gradient(to right, rgb(173, 173, 173),rgb(24, 201, 207),rgb(134, 29, 209),rgb(224, 162, 224));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .get-started {
+        text-decoration: none;
+        border: none;
+        padding: 10px;
+        border-radius: 50px;
+        background: white;
+        color: black;
+        box-shadow: 1px 0px 3px 0px rgb(26, 25, 25);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .get-started a {
+        text-decoration: none;
+        color: black
+    }
+
+    .get-started:hover {
+        background:  black;
+    }
+
+    .get-started a:hover{
+        color: white;
+    }
+</style>

@@ -1,23 +1,63 @@
 ---
-layout: page
-title: About Me
-permalink: /aboutme/
+layout: default
+permalink: /about-me/
 ---
-
-<div style="margin-top: 30px;">
+<div style="width: 100vw"></div>
+<div class="read-me container" id="read-me">
+    <h1 class="read-me-title">About Me 👨‍💻</h1>
     <p>Hello everyone 😋,</p>
     <p>How are you going today?</p>    
-    <p>I am Nam Nguyen. I come from Vietnam. I am currently an international student in Deakin University in Melbourne, Australia.</p>   
-    <p>I am an avid beginner in web developement, and I am interested in reading books.</p>  
+    <p>I am Nam Nguyen who thinks that he is funny 🙄. I come from Vietnam. I am currently an international student in Deakin University in Melbourne, Australia.</p>   
+    <p>I am a big fan of web developement. I'm also interested in reading books 📚 and making videos 🎬(Adobe Premiere Pro CC)</p>  
     <p>To pursue my passion of becoming a software engineer, I never stop putting all my effort to every personal project. This blog is one of my practical projects.</p>  
     <p>Anyway, thanks for visting my page.</p>
-    <p>Any feedback about content as well as design, please feel free to contact me via: <a href="https://www.facebook.com/vietnam.nguyen.186">Facebook</a> or <a href="https://www.instagram.com/nam.viet.nguyen/">Instagram</a></p>
-    <p>Or email me: vnngu@deakin.edu.au</p>
+    <p>Any feedback about content as well as design, please feel free to contact me via:</p>
+    <ul class="contact-list">
+        <li><a href="https://www.linkedin.com/in/nam-nguyen-cs/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/nnfunny" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/nam.viet.nguyen/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/vietnam.nguyen.186" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/namnguyenDev" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    </ul>
 </div>
+{% include footer.html %}
 
+<style>
+    .read-me {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        height: 100%;
+    }
 
+    .read-me-title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 75px;
+    }
 
+    .contact-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .contact-list li {
+        margin: 10px;
+    }
 
+    .contact-list a {
+        color: black;
+        font-size: 30px;
+    }
 
-
+    .contact-list ul {
+        padding-bottom: 100px
+    }
+    
+    @media (min-width: 1200px) {
+        .read-me {
+            height: 100vh;
+        }
+    } 
+</style>

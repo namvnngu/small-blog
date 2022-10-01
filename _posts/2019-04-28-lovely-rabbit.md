@@ -2,7 +2,8 @@
 title: A Lovely Rabbit
 author: Nam Nguyen
 read: 2
-permalink: "9"
+shortdesc: A lovely rabbit lives in a small peaceful town with her grandmother...
+permalink: "/posts/a-lovely-rabbit"
 ---
 
 *Severe (adjective): extremely bad or serious*
